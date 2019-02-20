@@ -61,7 +61,7 @@ body, html {
 }
 
 .slide-img-text .border {
-  background-color: #fff;
+  background-color: rgba(0,123,255,.6);
   color: #fff;
   padding: 20px;
 }
