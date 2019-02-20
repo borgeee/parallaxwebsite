@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>i-Travel Website</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7C.Roboto%7C.Josefin+sans:100,300,400,500" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!--Bootstrap CDN-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <!--Scroll Reveal-->
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <!--<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>-->
+    <!--<script type="text/javascript" src="js/script.js"></script>-->
+</head>
+
+
+<body>
+
+<!--Navigation-->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#about">i-Travel</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#whatwedo">What I Do</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#ourteam">How I Work</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+  <div class="slide-img1" id="about">
+    <div class="slide-img-text">
+      <span class="border">
+       Welcome to i-Travel
+      </span>
+    </div>
+  </div>
+
+  <section class="section section-dark">
+    <h2>About Me</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae esse repellat eos voluptatibus consectetur labore, quod necessitatibus. Recusandae veritatis fugiat, facilis autem deleniti nihil, ea quasi blanditiis ipsum, suscipit distinctio eaque sit ipsa. Aspernatur sit repudiandae odio odit in magnam nulla a accusamus necessitatibus quod deleniti dolore animi mollitia sequi enim quisquam nobis, minima rerum. Fugiat accusantium eligendi tempora eum, odit ex temporibus assumenda rerum eos ipsum facere adipisci placeat provident fugit numquam. Quasi, aut corrupti natus! Ea accusamus nobis adipisci culpa distinctio dolorum quis velit eligendi delectus illo sapiente, fugiat maxime quibusdam, asperiores perspiciatis, porro ut alias odio sequi.</p>
+  </section>
+
+  <div class="slide-img2" id="whatwedo">
+    <div class="slide-img-text">
+      <span class="border trans">
+        What I do?
+      </span>
+    </div>
+  </div>
+
+  <section class="section section-light">
+    <h2>i Travel to Work</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae esse repellat eos voluptatibus consectetur labore, quod necessitatibus. Recusandae veritatis fugiat, facilis autem deleniti nihil, ea quasi blanditiis ipsum, suscipit distinctio eaque sit ipsa. Aspernatur sit repudiandae odio odit in magnam nulla a accusamus necessitatibus quod deleniti dolore animi mollitia sequi enim quisquam nobis, minima rerum. Fugiat accusantium eligendi tempora eum, odit ex temporibus assumenda rerum eos ipsum facere adipisci placeat provident fugit numquam.</p>
+  </section>
+
+
+  <div class="slide-img3" id="ourteam">
+    <div class="slide-img-text">
+      <span class="border trans">
+       HOW I WORK?
+      </span>
+    </div>
+  </div>
+
+  <section class="section section-dark">
+    <h2>i Work to Travel</h2>
+    <p>Recusandae esse repellat eos voluptatibus consectetur labore, quod necessitatibus. Recusandae veritatis fugiat, facilis autem deleniti nihil, ea quasi blanditiis ipsum, suscipit distinctio eaque sit ipsa. Aspernatur sit repudiandae odio odit in magnam nulla a accusamus necessitatibus quod deleniti dolore animi mollitia sequi enim quisquam nobis, minima rerum. Fugiat accusantium eligendi tempora eum, odit ex temporibus assumenda rerum eos ipsum facere adipisci placeat provident fugit numquam.</p>
+  </section>
+
+  <div class="slide-img1" id="contact">
+    <div class="slide-img-text">
+      <span class="border">
+        hello@abg.website
+      </span>
+    </div>
+  </div>
+
+
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</body>
+</html>
